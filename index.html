@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+  <div id="container">
+  <header class="header">
+    <h1 id="title" class="title">Product Experience Survey Form</h1>
+    <p id="description" class="description">
+      Please take the time to tell us how was your experience with our product.
+    </p>
+  </header>
+  <form id="survey-form" action="" method="post">
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" class="form-control" required placeholder="please enter your full name" />
+    </div>
+    <div class="form-group">
+      <label for="email" id="email-label">Email</label>
+      <input type="email" class="form-control" required id="email" placeholder="please enter your email address" />
+    </div>
+    <div class="form-group">
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" class="form-control" min="11" max="100" optional id="age" placeholder="how old are you?" />
+    </div>
+    <div class="form-group">
+      <p>Which describes you best?</p>
+      <select id="dropdown" class="form-control" required>
+        <option value="select">Select an option</option>
+        <option value="student">Student</option>
+        <option value="part-time">Part-time worker</option>
+        <option value="full-time">Full-time worker</option>
+        <option value="freelancer">Freelancer</option>
+        <option value="no ans">Prefer not to say</option>
+      </select>
+    </div>
+
+    <div id="radio-group" name="radio-group" class="form-group">
+      <p>Would you recommend our product to your friends?</p>
+      <label for="definitely">
+        <input type="radio" name="recommend" class="recommend" value="definitely" checked />Definitely</label>
+
+      <label for="maybe">
+        <input type="radio" name="recommend" class="recommend" value="maybe" />Maybe</label>
+
+      <label for="not sure">
+        <input type="radio" name="recommend" class="recommend" value="not sure" />Not sure</label sure</label>
+    </div>
+    <br />
+    <div class="form-group">
+      <fieldset>
+        <legend>What is your favorite feature of our product?</legend>
+        <label for="1"><input name="feature" class="feature" type="checkbox" value="feature 1" />feature 1</label>
+        <label for="2"><input name="feature" class="feature" type="checkbox" value="feature 2" />feature 2</label>
+        <label for="3"><input name="feature" class="feature" type="checkbox" value="feature 3" />feature 3</label>
+        <label for="4"><input name="feature" class="feature" type="checkbox" value="feature 4" />feature 4</label>
+        <label for="5"><input name="feature" class="feature" type="checkbox" value="feature 5" />feature 5</label>
+      </fieldset>
+    </div>
+    <div class="form-group">
+      <p>
+        Any comments or suggestions on what you would like to see improved?
+      </p>
+      <textarea id="comments" name="comments" placeholder="Please enter your comment here"> </textarea>
+    </div>
+    <br /><br />
+    <div class="form-group">
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </form>
+</div>
+</head>
+  
+<body>
+  
+</body>
+</html>
